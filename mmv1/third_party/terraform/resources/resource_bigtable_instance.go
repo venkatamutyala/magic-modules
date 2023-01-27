@@ -12,6 +12,7 @@ import (
 	"cloud.google.com/go/bigtable"
 )
 
+// Let's add a comment here
 func resourceBigtableInstance() *schema.Resource {
 	return &schema.Resource{
 		Create: resourceBigtableInstanceCreate,
