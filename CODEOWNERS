@@ -1,1 +1,5 @@
 tpgtools/overrides @rileykarson
+
+* scottsuarez
+
+/mmv1/third_party/terraform/resources/resource_bigtable_* ryanoaks
