@@ -6,7 +6,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func dataSourceGoogleCloudFunctions2Function() *schema.Resource {
+func DataSourceGoogleCloudFunctions2Function() *schema.Resource {
 	// Generate datasource schema from resource
 	dsSchema := datasourceSchemaFromResourceSchema(resourceCloudfunctions2function().Schema)
 

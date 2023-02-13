@@ -6,7 +6,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func dataSourceGoogleComputeGlobalForwardingRule() *schema.Resource {
+func DataSourceGoogleComputeGlobalForwardingRule() *schema.Resource {
 	dsSchema := datasourceSchemaFromResourceSchema(resourceComputeGlobalForwardingRule().Schema)
 
 	// Set 'Required' schema elements

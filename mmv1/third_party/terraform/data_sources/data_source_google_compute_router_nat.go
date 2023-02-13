@@ -6,7 +6,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func dataSourceGoogleComputeRouterNat() *schema.Resource {
+func DataSourceGoogleComputeRouterNat() *schema.Resource {
 
 	dsSchema := datasourceSchemaFromResourceSchema(resourceComputeRouterNat().Schema)
 

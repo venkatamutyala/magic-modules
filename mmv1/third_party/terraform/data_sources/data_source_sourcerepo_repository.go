@@ -6,7 +6,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func dataSourceGoogleSourceRepoRepository() *schema.Resource {
+func DataSourceGoogleSourceRepoRepository() *schema.Resource {
 
 	dsSchema := datasourceSchemaFromResourceSchema(resourceSourceRepoRepository().Schema)
 

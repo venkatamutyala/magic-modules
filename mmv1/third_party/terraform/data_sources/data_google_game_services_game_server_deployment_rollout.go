@@ -6,7 +6,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func dataSourceGameServicesGameServerDeploymentRollout() *schema.Resource {
+func DataSourceGameServicesGameServerDeploymentRollout() *schema.Resource {
 
 	dsSchema := datasourceSchemaFromResourceSchema(resourceGameServicesGameServerDeploymentRollout().Schema)
 	addRequiredFieldsToSchema(dsSchema, "deployment_id")

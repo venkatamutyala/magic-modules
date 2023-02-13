@@ -12,7 +12,7 @@ import (
 <% end -%>
 )
 
-func dataSourceGoogleComputeRouterStatus() *schema.Resource {
+func DataSourceGoogleComputeRouterStatus() *schema.Resource {
 	routeElemSchema := datasourceSchemaFromResourceSchema(resourceComputeRoute().Schema)
 
 	return &schema.Resource{

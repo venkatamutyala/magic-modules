@@ -6,7 +6,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func dataSourceSpannerInstance() *schema.Resource {
+func DataSourceSpannerInstance() *schema.Resource {
 
 	dsSchema := datasourceSchemaFromResourceSchema(resourceSpannerInstance().Schema)
 

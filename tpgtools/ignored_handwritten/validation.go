@@ -231,7 +231,7 @@ func validateDuration() schema.SchemaValidateFunc {
 	}
 }
 
-func validateNonNegativeDuration() schema.SchemaValidateFunc {
+func ValidateNonNegativeDuration() schema.SchemaValidateFunc {
 	return func(i interface{}, k string) (s []string, es []error) {
 		v, ok := i.(string)
 		if !ok {

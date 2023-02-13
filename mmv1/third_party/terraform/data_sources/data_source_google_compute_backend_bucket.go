@@ -6,7 +6,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func dataSourceGoogleComputeBackendBucket() *schema.Resource {
+func DataSourceGoogleComputeBackendBucket() *schema.Resource {
 	dsSchema := datasourceSchemaFromResourceSchema(resourceComputeBackendBucket().Schema)
 
 	// Set 'Required' schema elements

@@ -6,7 +6,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func dataSourcePrivatecaCertificateAuthority() *schema.Resource {
+func DataSourcePrivatecaCertificateAuthority() *schema.Resource {
 	dsSchema := datasourceSchemaFromResourceSchema(resourcePrivatecaCertificateAuthority().Schema)
 	addOptionalFieldsToSchema(dsSchema, "project")
 	addOptionalFieldsToSchema(dsSchema, "location")

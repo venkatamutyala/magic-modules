@@ -302,7 +302,7 @@ func mergeSchemas(a, b map[string]*schema.Schema) map[string]*schema.Schema {
 	return merged
 }
 
-func mergeResourceMaps(ms ...map[string]*schema.Resource) (map[string]*schema.Resource, error) {
+func MergeResourceMaps(ms ...map[string]*schema.Resource) (map[string]*schema.Resource, error) {
 	merged := make(map[string]*schema.Resource)
 	duplicates := []string{}
 
@@ -318,7 +318,7 @@ func mergeResourceMaps(ms ...map[string]*schema.Resource) (map[string]*schema.Re
 
 	var err error
 	if len(duplicates) > 0 {
-		err = fmt.Errorf("saw duplicates in mergeResourceMaps: %v", duplicates)
+		err = fmt.Errorf("saw duplicates in MergeResourceMaps: %v", duplicates)
 	}
 
 	return merged, err
@@ -504,7 +504,7 @@ func SnakeToPascalCase(s string) string {
 	return strings.Join(split, "")
 }
 
-func multiEnvSearch(ks []string) string {
+func MultiEnvSearch(ks []string) string {
 	for _, k := range ks {
 		if v := os.Getenv(k); v != "" {
 			return v
